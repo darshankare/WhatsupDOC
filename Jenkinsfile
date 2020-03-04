@@ -2,7 +2,7 @@ def private_ip = ''
  pipeline {
  
    agent {
-                        label "develop"
+                        label "master"
                                        }
     tools {
         maven 'Maven'
