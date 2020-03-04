@@ -2,7 +2,7 @@ def private_ip = ''
  pipeline {
  
    agent {
-                        label "master"
+                        label "develop"
                                        }
     tools {
         maven 'Maven'
@@ -13,7 +13,7 @@ stages {
 // for display purposes
 //test only
       // Get some code from a GitHub repository
-      git 'https://github.com/RamachandraAnnadi/WhatsupDOC.git'
+      git 'https://github.com/dashankare/WhatsupDOC.git'
       // Get the Maven tool.
  // ** NOTE: This 'M3' Maven tool must be configured
      // **       in the global configuration.
